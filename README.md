@@ -11,10 +11,10 @@ string decimalToBinary(int decimal) {
         binary = to_string(decimal % 2) + binary;
         decimal = decimal / 2;
     }
-    return binary
+    return binary;
 }
 
-// Function 2: Binary to Decimal
+ Function 2: Binary to Decimal
 int binaryToDecimal(string binary) {
     int decimal = 0;
     int power = 1;
