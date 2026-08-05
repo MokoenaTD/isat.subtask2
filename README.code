@@ -18,7 +18,7 @@ string decimalToBinary(int decimal) {
 int binaryToDecimal(string binary) {
     int decimal = 0;
     int power = 1;
-    for (int  = binary.length() - 1; i >= 0; i--) {
+    for (int i = binary.length() - 1; i >= 0; i--) {
         if (binary[i] == '1')
             decimal += power;
         power *= 2;
@@ -46,7 +46,7 @@ int hexToDecimal(string hex) {
         char c = toupper(hex[i]);
         int value = (c >= 'A')? (c - 'A' + 10) : (c - '0');
         decimal += value * power;
-        power *= 16;
+        power * 16;
     }
     return decimal;
 }
